@@ -3,7 +3,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 import os
 
-uri = os.environ.get('DATABASE_URL', 'postgres://username:password@192.168.1.42/FLASK_ENTRY')
+uri = os.environ.get('DATABASE_URL', 'postgres://wfgbweioifdejs:mnr1DloWvx9VJC3CJ-hLI2zgSx@ec2-79-125-126-192.eu-west-1.compute.amazonaws.com:5432/d98fdmm7p34k7d')
 engine = create_engine(uri, convert_unicode=True)
 db_session = scoped_session(sessionmaker(autocommit=False,
 					 autoflush=False,
